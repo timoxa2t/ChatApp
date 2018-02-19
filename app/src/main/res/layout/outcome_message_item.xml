@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23:01"
+        android:textSize="@dimen/time_size"
+        android:layout_toLeftOf="@+id/buble_layout"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/buble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bubble5">
+
+    <TextView
+        android:id="@+id/tv_outcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="@dimen/text_size"
+        style="@style/TextAppearance.Design.Snackbar.Message"
+        android:text="null"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
